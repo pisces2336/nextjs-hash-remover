@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next.jsハッシュ外すくん</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">Next.js ハッシュ外すくん</h1>
+  </header>
+  <main class="container">
+    <section class="textarea_wrapper">
+      <h2 class="title">入力：</h2>
+      <textarea class="textarea" id="js_input" name="input" wrap="off"></textarea>
+    </section>
+    <section class="control">
+      <div class="radio_wrapper">
+        <div class="radio">
+          <input class="radioButton" type="radio" name="language" value="html" checked>
+          <label for="html">HTML</label>
+        </div>
+        <div class="radio">
+          <input class="radioButton" type="radio" name="language" value="css">
+          <label for="css">CSS</label>
+        </div>
+      </div>
+      <div class="select_wrapper">
+        <p class="title">アンダースコアの数</p>
+        <div class="select_inner">
+          <select class="select" id="js_underscoreLowerSelecter" name="underscore_lower">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <p class="wave">～</p>
+          <select class="select" id="js_underscoreUpperSelecter" name="underscore_upper">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+      <div class="select_wrapper">
+        <p class="title">ハッシュの文字数</p>
+        <div class="select_inner">
+          <select class="select" id="js_numHashSelecter" name="num_hash">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+      </div>
+      <div class="button_wrapper">
+        <button id="js_trigger">ハッシュを外す！</button>
+      </div>
+    </section>
+    <section class="textarea_wrapper">
+      <h2 class="title">出力：</h2>
+      <textarea class="textarea" id="js_output" name="output" wrap="off" readonly></textarea>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
