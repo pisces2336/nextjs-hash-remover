@@ -1,7 +1,7 @@
 const input = document.getElementById('js_input');
 const output = document.getElementById('js_output');
 const trigger = document.getElementById('js_trigger');
-const marks = ' ",.#[>~+|:';
+const marks = ' ",.#[>~+|:\n';
 const regBase = '__.{5}\\';
 
 trigger.addEventListener('click', () => {
